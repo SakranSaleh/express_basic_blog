@@ -1,0 +1,8 @@
+@layout('layouts.rightSidebar')
+
+
+@section('page-content')
+@each(post in posts)
+@!component('component.article', title=post.title, body=post.body)
+@endeach
+@endsection
